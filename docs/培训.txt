@@ -1,0 +1,61 @@
+0. 运行两个项目
+  server: npm run start
+  client: npm run dev | npm run watch
+
+1. list
+  布局
+  路由：query(可选), 命名规范，...fragment (常量)
+  @argumentDefinitions {type: string, defaultValue?: mixed, nonNull?: boolean, list?: boolean}
+
+2. 文件结构组织
+  功能，组件，样式，mutation放一个文件夹
+
+3. App.js
+  布局，页面结构
+  css moudle 自己样子自己用
+    obj.a obj['a-b']
+
+4. themes.less
+  全局样式，变量
+
+5. state less component(UI) + data 不推荐使用class component
+  给数据即渲染
+
+6. TodoListAntd.js
+  columns, data,
+
+7. antd 组件自己看api
+  https://ant.design/
+
+8. relay modern api
+https://facebook.github.io/relay/docs/en/pagination-container.html
+
+9. 命名规范文档
+Where Toolbar_viewer is the name of the fragment, by convention it uses the name of the file (Toolbar) + underscore + the name of property under which that data must become available via this.props.
+
+routes_ConsultList_Query，路由查询这个命名方式，routes_xx_Query，xx是文件名，其他是固定的
+
+10. 两个格式列表
+createPaginationContainer
+TodoListAntd.js
+TodoList2Antd.js
+
+11. mutation
+命名规范：接口名（首字母大写）+Mutation
+relay api: https://facebook.github.io/relay/docs/en/relay-store.html
+ getType(): string;
+  getValue(name: string, arguments?: ?Object): mixed;
+  setLinkedRecord(
+    record: RecordProxy,
+    name: string,
+    arguments?: ?Object,
+  ): RecordProxy;
+  setLinkedRecords(
+    records: Array<?RecordProxy>,
+    name: string,
+    arguments?: ?Object,
+  ): RecordProxy;
+更新缓存：重点
+
+
+
